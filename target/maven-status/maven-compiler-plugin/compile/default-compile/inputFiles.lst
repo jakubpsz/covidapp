@@ -1,0 +1,13 @@
+C:\Users\jakub\Documents\InfoShare\covidapp\src\main\java\com\jakubpszczolka\covidapp\Configuration\RestTemplateConfig.java
+C:\Users\jakub\Documents\InfoShare\covidapp\src\main\java\com\jakubpszczolka\covidapp\Controllers\CovidInfoController.java
+C:\Users\jakub\Documents\InfoShare\covidapp\src\main\java\com\jakubpszczolka\covidapp\Model\DTO\CovidInfoDto.java
+C:\Users\jakub\Documents\InfoShare\covidapp\src\main\java\com\jakubpszczolka\covidapp\Services\CovidApiServiceImpl.java
+C:\Users\jakub\Documents\InfoShare\covidapp\src\main\java\com\jakubpszczolka\covidapp\Services\CovidInfoServiceImpl.java
+C:\Users\jakub\Documents\InfoShare\covidapp\src\main\java\com\jakubpszczolka\covidapp\Model\CovidInfo.java
+C:\Users\jakub\Documents\InfoShare\covidapp\src\main\java\com\jakubpszczolka\covidapp\Services\CovidApiService.java
+C:\Users\jakub\Documents\InfoShare\covidapp\src\main\java\com\jakubpszczolka\covidapp\CovidAppApplication.java
+C:\Users\jakub\Documents\InfoShare\covidapp\src\main\java\com\jakubpszczolka\covidapp\Services\CovidInfoService.java
+C:\Users\jakub\Documents\InfoShare\covidapp\src\main\java\com\jakubpszczolka\covidapp\Model\converters\CovidInfoConverter.java
+C:\Users\jakub\Documents\InfoShare\covidapp\src\main\java\com\jakubpszczolka\covidapp\Repositories\CovidInfoRepository.java
+C:\Users\jakub\Documents\InfoShare\covidapp\src\main\java\com\jakubpszczolka\covidapp\Model\converters\CovidInfoConverterImpl.java
+C:\Users\jakub\Documents\InfoShare\covidapp\src\main\java\com\jakubpszczolka\covidapp\Configuration\WebSecurityConfig.java
