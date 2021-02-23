@@ -1,4 +1,4 @@
-package com.jakubpszczolka.covidapp.Model;
+package com.jakubpszczolka.covidapp.Configuration;
 
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.context.annotation.Bean;

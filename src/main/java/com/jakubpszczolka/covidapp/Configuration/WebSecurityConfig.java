@@ -1,4 +1,4 @@
-package com.jakubpszczolka.covidapp.Model;
+package com.jakubpszczolka.covidapp.Configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -17,7 +17,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http
                 .authorizeRequests()
-                .antMatchers("/", "/covid").permitAll()
+                .antMatchers("/", "/covid", "/covid/save").permitAll()
                 .anyRequest().authenticated()
                 .and()
                 .formLogin()

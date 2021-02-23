@@ -1,23 +1,15 @@
-package com.jakubpszczolka.covidapp.Model;
-
+package com.jakubpszczolka.covidapp.Model.DTO;
 
 import lombok.AllArgsConstructor;
-import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import java.util.UUID;
-
-@Entity
-@Data
+@Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class CovidInfo {
-    @Id
-    @GeneratedValue
-    private UUID id;
+public class CovidInfoDto {
 
     private String country;
     private long confirmed;
