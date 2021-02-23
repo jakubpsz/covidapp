@@ -18,4 +18,17 @@ public class CovidInfoConverterImpl implements CovidInfoConverter {
         covidInfo.setDeaths(covidInfoDto.getDeaths());
         return covidInfo;
     }
+
+    @Override
+    public CovidInfoDto covidInfoToCovidInfoDto(CovidInfo covidInfo) {
+        CovidInfoDto covidInfoDto = new CovidInfoDto();
+        covidInfoDto.setCountry(covidInfo.getCountry());
+        covidInfoDto.setLastChange(covidInfo.getLastChange());
+        covidInfoDto.setLastUpdate(covidInfo.getLastUpdate());
+        covidInfoDto.setConfirmed(covidInfo.getConfirmed());
+        covidInfoDto.setRecovered(covidInfo.getRecovered());
+        covidInfoDto.setCritical(covidInfo.getCritical());
+        covidInfoDto.setDeaths(covidInfo.getDeaths());
+        return covidInfoDto;
+    }
 }

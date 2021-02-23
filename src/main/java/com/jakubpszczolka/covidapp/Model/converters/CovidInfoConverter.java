@@ -5,4 +5,5 @@ import com.jakubpszczolka.covidapp.Model.DTO.CovidInfoDto;
 
 public interface CovidInfoConverter {
     CovidInfo covidInfoDtoToCovidInfo(CovidInfoDto covidInfoDto);
+    CovidInfoDto covidInfoToCovidInfoDto(CovidInfo covidInfo);
 }

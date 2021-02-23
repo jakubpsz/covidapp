@@ -6,6 +6,9 @@ import com.jakubpszczolka.covidapp.Model.converters.CovidInfoConverter;
 import com.jakubpszczolka.covidapp.Repositories.CovidInfoRepository;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+import java.util.stream.Collectors;
+
 @Service
 public class CovidInfoServiceImpl implements CovidInfoService {
 
@@ -20,5 +23,12 @@ public class CovidInfoServiceImpl implements CovidInfoService {
     @Override
     public CovidInfo saveCovidInfo(CovidInfoDto covidInfoDto) {
         return covidInfoRepository.save(covidInfoConverter.covidInfoDtoToCovidInfo(covidInfoDto));
+    }
+
+    @Override
+    public List<CovidInfoDto> getCovidInfos() {
+        return covidInfoRepository.findAll().stream()
+                .map(covidInfoConverter::covidInfoToCovidInfoDto)
+                .collect(Collectors.toList());
     }
 }

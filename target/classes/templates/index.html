@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CovidApp</title>
+</head>
+<body>
+<tr th:each="covidInfo: ${covidInfos}">
+    <td th:text="${covidInfo}"></td>
+    <p>================</p>
+</tr>
+<form th:action="@{/index/save}" th:object="${newInfo}" method="post">
+    <p>Country: <input type="text" id="country" name="country"></p>
+    <p><input type="submit">Get covid Info</p>
+</form>
+</body>
+</html>
