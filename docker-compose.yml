@@ -1,0 +1,29 @@
+version: '3'
+
+services:
+
+  db:
+    image: postgres:latest
+    container_name: covidAppDB
+    environment:
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=covidDB
+    ports:
+      - 5432:5432
+    restart: always
+
+  myApp:
+    image: jakubpsz/covidapp
+    container_name: covidApp
+#    build:
+#      context: .
+#      dockerfile: Dockerfile
+    ports:
+      - 8080:8080
+    restart: always
+    depends_on:
+      - db
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/covidDB
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: password
